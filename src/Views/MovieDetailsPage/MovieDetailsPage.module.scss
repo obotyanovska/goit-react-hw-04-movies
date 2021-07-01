@@ -1,0 +1,23 @@
+.AdditionalData {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+.AdditionalData__title {
+  margin-bottom: 10px;
+}
+
+.NavLink {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5481d3;
+
+  &:hover,
+  &:focus {
+    color: tomato;
+  }
+}
+.AdditionalData__textCap {
+  margin: 20px;
+}

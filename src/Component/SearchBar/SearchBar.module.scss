@@ -1,0 +1,25 @@
+.SearchBar {
+  padding: 20px 20px;
+}
+
+.SearchForm {
+  display: flex;
+  align-items: center;
+}
+.SearchForm__btn {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(84, 129, 211);
+  color: white;
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: tomato;
+  }
+}

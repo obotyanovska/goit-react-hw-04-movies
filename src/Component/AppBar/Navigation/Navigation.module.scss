@@ -1,0 +1,22 @@
+.Navigation {
+  display: flex;
+  align-items: center;
+}
+
+.Navigation__item + .Navigation__item {
+  margin-left: 20px;
+}
+
+.Navigation__link {
+  min-width: 70px;
+  display: block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgb(84, 129, 211);
+  color: white;
+  text-align: center;
+
+  &_active {
+    background-color: tomato;
+  }
+}
