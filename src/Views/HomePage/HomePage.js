@@ -8,6 +8,7 @@ class HomePage extends Component {
   };
 
   componentDidMount() {
+    localStorage.clear();
     this.fetchTrendingMovies();
   }
 

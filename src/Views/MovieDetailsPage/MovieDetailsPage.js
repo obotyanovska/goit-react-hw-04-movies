@@ -93,6 +93,7 @@ class MovieDetailsPage extends Component {
                 pathname: `${this.props.match.url}/reviews`,
                 state: { from: routes.home },
               }}
+              className={styles.NavLink}
             >
               Reviws
             </NavLink>
