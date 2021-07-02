@@ -12,7 +12,7 @@ const MoviesList = ({ movies, location }) => {
           <NavLink
             to={{
               pathname: `movies/${id}`,
-              state: { from: location.pathname },
+              state: { from: location },
             }}
           >
             <MoviePreview title={title} name={name} src={poster_path} />

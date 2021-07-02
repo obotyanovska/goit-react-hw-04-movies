@@ -1,5 +1,5 @@
 import React, { Component, Suspense, lazy } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import AppBar from './Component/AppBar';
 import routes from './routes';
 import Spinner from './Component/Spinner/Spinner.js';
@@ -29,7 +29,7 @@ class App extends Component {
               component={MovieDetailsPage}
             />
             <Route path={routes.moviesPage} component={MoviesPage} />
-            <Route component={HomePage} />
+            <Redirect to={routes.home} />
           </Switch>
         </Suspense>
       </>

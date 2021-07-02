@@ -78,7 +78,10 @@ class MovieDetailsPage extends Component {
           </h3>
           <li>
             <NavLink
-              to={`${this.props.match.url}/cast`}
+              to={{
+                pathname: `${this.props.match.url}/cast`,
+                state: { from: routes.home },
+              }}
               className={styles.NavLink}
             >
               Cast
@@ -86,8 +89,10 @@ class MovieDetailsPage extends Component {
           </li>
           <li>
             <NavLink
-              to={`${this.props.match.url}/reviews`}
-              className={styles.NavLink}
+              to={{
+                pathname: `${this.props.match.url}/reviews`,
+                state: { from: routes.home },
+              }}
             >
               Reviws
             </NavLink>
